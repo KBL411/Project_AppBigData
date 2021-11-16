@@ -24,11 +24,11 @@ model_XGB = XGBClassifier()
 model_XGB.fit(X_train, y_train)
 model_accuracy(X_test, y_test, model_XGB)
 
-model_RFC = RandomForestClassifier(n_estimators=100)
+model_RFC = RandomForestClassifier(n_estimators=1000)
 model_RFC.fit(X_train, y_train)
 model_accuracy(X_test, y_test, model_RFC)
 
-model_GBC = GradientBoostingClassifier(n_estimators=100)
+model_GBC = GradientBoostingClassifier(n_estimators=1000)
 model_GBC.fit(X_train, y_train)
 model_accuracy(X_test, y_test, model_GBC)
 
