@@ -5,7 +5,8 @@ from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import confusion_matrix
-from feature_engineering import df
+import joblib
+from feature_engineering import df_train
 
 
 def model_accuracy(features_test: pd.DataFrame, target_test: pd.DataFrame, model):
@@ -13,23 +14,31 @@ def model_accuracy(features_test: pd.DataFrame, target_test: pd.DataFrame, model
     accuracy = accuracy_score(target_test, target_pred)
     print(confusion_matrix(target_test, target_pred))
     print("Accuracy: ", (accuracy * 100.0))
+    print('\n \n')
 
 
-y = df[['TARGET']]
-X = df.drop('TARGET', axis=1)
+y = df_train[['TARGET']]
+X = df_train.drop('TARGET', axis=1)
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
+print('XGboost')
 model_XGB = XGBClassifier()
-model_XGB.fit(X_train, y_train)
+model_XGB.fit(X_train, y_train.values.ravel())
 model_accuracy(X_test, y_test, model_XGB)
+joblib.dump(model_XGB, "model/Xgboost.model.joblib")
 
-model_RFC = RandomForestClassifier(n_estimators=1000)
-model_RFC.fit(X_train, y_train)
+print('RandomForest')
+model_RFC = RandomForestClassifier(n_estimators=100)
+model_RFC.fit(X_train, y_train.values.ravel())
 model_accuracy(X_test, y_test, model_RFC)
+joblib.dump(model_RFC, "model/RandomForestClass.model.joblib")
 
-model_GBC = GradientBoostingClassifier(n_estimators=1000)
-model_GBC.fit(X_train, y_train)
+print('GradientBoosting')
+model_GBC = GradientBoostingClassifier(n_estimators=100)
+model_GBC.fit(X_train, y_train.values.ravel())
 model_accuracy(X_test, y_test, model_GBC)
+joblib.dump(model_GBC, "model/GradientBoostingClass.model.joblib")
 
-model_XGB.save_model('XGBOOST.model')
+
+print('end of model training')

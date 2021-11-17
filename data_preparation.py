@@ -15,16 +15,14 @@ def missing_values(dataframe: pd.DataFrame, percent: int) -> pd.DataFrame:
     return dataframe
 
 
-df = pd.read_csv("data/application_train.csv")
+df_train = pd.read_csv("data/application_train.csv")
 
-print('null by columns raw data : \n')
-null_by_columns(df)
-print('\n \n')
+df_train = missing_values(df_train, 19)
 
-df = missing_values(df, 19)
+df_train = df_train.dropna(how='any')
 
-df = df.dropna(how='any')
+#print('null by columns prepared data : \n')
+#null_by_columns(df)
 
-print('null by columns prepared data : \n')
-null_by_columns(df)
+print('end of data preparation')
 print('\n \n')
