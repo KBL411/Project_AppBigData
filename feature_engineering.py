@@ -23,11 +23,11 @@ def featuring(dataframe: pd.DataFrame) -> pd.DataFrame:
     df_non_numerical = encoding(df_non_numerical)
     dataframe = pd.concat([df_numerical, df_non_numerical], axis=1)
 
-    dataframe.drop(['FLAG_MOBIL', 'FLAG_DOCUMENT_2', 'SK_ID_CURR'], axis=1, inplace=True)
     dataframe = normalise(dataframe)
     return dataframe
 
 
+df_train.drop(['FLAG_MOBIL', 'FLAG_DOCUMENT_2', 'SK_ID_CURR'], axis=1, inplace=True)
 df_train = featuring(df_train)
 
 print('end of data featuring')

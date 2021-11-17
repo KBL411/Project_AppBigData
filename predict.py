@@ -1,7 +1,7 @@
 import pandas as pd
 import joblib
 from feature_engineering import featuring
-from feature_engineering import df_train
+from data_preparation import df_train
 
 df_test = pd.read_csv('data/application_test.csv')
 
@@ -12,12 +12,9 @@ model_XGB = joblib.load('model/Xgboost.model.joblib')
 df_test = featuring(df_test)
 
 df_train = df_train.drop(['TARGET'], axis=1)
-
 df_test = df_test[df_train.columns]
 
 df_test = df_test.dropna(how='any')
 
-df_test =featuring(df_test)
-
-#choose a model first
+# choose a model first
 prediction = model_XGB.predict(df_test)
