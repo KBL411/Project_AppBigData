@@ -15,7 +15,7 @@ def missing_values(dataframe: pd.DataFrame, percent: int) -> pd.DataFrame:
     return dataframe
 
 
-df = pd.read_csv("application_train.csv")
+df = pd.read_csv("data/application_train.csv")
 
 print('null by columns raw data : \n')
 null_by_columns(df)
