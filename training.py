@@ -26,19 +26,18 @@ print('XGboost')
 model_XGB = XGBClassifier()
 model_XGB.fit(X_train, y_train.values.ravel())
 model_accuracy(X_test, y_test, model_XGB)
-joblib.dump(model_XGB, "model/Xgboost.model.joblib")
+joblib.dump(model_XGB, "model/Xgboost.model.joblib", compress=3)
 
 print('RandomForest')
 model_RFC = RandomForestClassifier(n_estimators=100)
 model_RFC.fit(X_train, y_train.values.ravel())
 model_accuracy(X_test, y_test, model_RFC)
-joblib.dump(model_RFC, "model/RandomForestClass.model.joblib")
+joblib.dump(model_RFC, "model/RandomForestClass.model.joblib", compress=3)
 
 print('GradientBoosting')
 model_GBC = GradientBoostingClassifier(n_estimators=100)
 model_GBC.fit(X_train, y_train.values.ravel())
 model_accuracy(X_test, y_test, model_GBC)
-joblib.dump(model_GBC, "model/GradientBoostingClass.model.joblib")
-
+joblib.dump(model_GBC, "model/GradientBoostingClass.model.joblib", compress=3)
 
 print('end of model training')
