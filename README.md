@@ -50,3 +50,8 @@ Use a short, lowercase word or words. Separate words with underscores to improve
 
 Use a short, lowercase word or words. Do not separate words with underscores.
 `package`,  `mypackage`
+
+## ML Interpretability (SHAP)
+Visualize a summary plot
+
+
