@@ -63,4 +63,7 @@ A dependence scatter plot to show the effect of a single feature across the whol
 Visualize explanations for all points of your data set at once.
 
 
+Visualize a summary plot for each class on the whole dataset.
+<img src="https://github.com/KBL411/Project_AppBigData/blob/main/summary_plot%20.png" />
+
 
