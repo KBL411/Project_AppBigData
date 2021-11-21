@@ -56,7 +56,8 @@ Visualize explanations for a specific point of a data set.
 
 We plot the SHAP values for the 10th observation:
 <img src="https://github.com/KBL411/Project_AppBigData/blob/main/force_plot.png" />
-<br A dependence scatter plot to show the effect of a single feature across the whole dataset/>
+
+A dependence scatter plot to show the effect of a single feature across the whole dataset:
 <img src="https://github.com/KBL411/Project_AppBigData/blob/main/dependence_plot.png" />
 
 Visualize explanations for all points of your data set at once.
