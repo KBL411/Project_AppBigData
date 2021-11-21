@@ -53,7 +53,7 @@ Use a short, lowercase word or words. Do not separate words with underscores.
 
 ## ML Interpretability (SHAP)
 Visualize explanations for a specific point of a data set
-
 We plot the SHAP values for the 10th observation
+https://github.com/KBL411/Project_AppBigData/blob/main/force_plot.png
 
 
