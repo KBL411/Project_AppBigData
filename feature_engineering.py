@@ -30,5 +30,4 @@ def featuring(dataframe: pd.DataFrame) -> pd.DataFrame:
 df_train.drop(['FLAG_MOBIL', 'FLAG_DOCUMENT_2', 'SK_ID_CURR'], axis=1, inplace=True)
 df_train = featuring(df_train)
 
-print('end of data featuring')
-print('\n \n')
+print('end of data featuring\n')

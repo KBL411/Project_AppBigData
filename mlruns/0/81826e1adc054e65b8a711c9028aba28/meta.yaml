@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Hugo/Documents/Project_AppBigData/mlruns/0/81826e1adc054e65b8a711c9028aba28/artifacts
+end_time: 1637598530002
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 81826e1adc054e65b8a711c9028aba28
+run_uuid: 81826e1adc054e65b8a711c9028aba28
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1637598484141
+status: 3
+tags: []
+user_id: Hugo

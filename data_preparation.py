@@ -24,5 +24,4 @@ df_train = df_train.dropna(how='any')
 #print('null by columns prepared data : \n')
 #null_by_columns(df)
 
-print('end of data preparation')
-print('\n \n')
+print('end of data preparation\n')
