@@ -6,6 +6,12 @@
 	poetry install
 	
 Poetry will install all the package store in the .toml
+### Installation Problem
+If you have an problem of installation check that you are in the right directory. If yes do Windows+R and go to 
+
+	C:\Users\"User_Name"\AppData\Local\pypoetry
+
+Delete the Cache folder and re-run the installation
 
 ## Poetry function
 ### pyproject.toml
@@ -19,6 +25,10 @@ And if you need to remove one :
 	`poetry remove [package_name]`
 ### poetry.lock
 If you don't want the latest version of your package or just an specific version you have to configure it here.
+
+## 
+
+
 
 ## Naming Convention
 ### Function
