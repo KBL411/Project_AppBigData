@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4251706-6906-45a0-b346-1d428ea5b20b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c4251706-6906-45a0-b346-1d428ea5b20b" name="Changes" comment="rollabck to sdsd et ajout readme">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +227,16 @@
       <workItem from="1637657039125" duration="6107000" />
       <workItem from="1637663231906" duration="1019000" />
       <workItem from="1637664284521" duration="1445000" />
+      <workItem from="1637666397659" duration="268000" />
     </task>
+    <task id="LOCAL-00001" summary="rollabck to sdsd et ajout readme">
+      <created>1637666489497</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1637666489497</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +253,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="rollabck to sdsd et ajout readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="rollabck to sdsd et ajout readme" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Project_AppBigData$dataprep.coverage" NAME="dataprep Coverage Results" MODIFIED="1637055920213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
