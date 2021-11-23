@@ -97,10 +97,10 @@ For instance, we execute this command on one line of our test file:
 Visualize explanations for a specific point of a data set.
 
 We plot the SHAP values for the 10th observation:
-<img src="https://github.com/KBL411/Project_AppBigData/blob/main/for_README/dependence_plot.png"/>
+<img src="https://github.com/KBL411/Project_AppBigData/blob/main/for_README/force_plot.png"/>
 
 A dependence scatter plot to show the effect of a single feature across the whole dataset:
-<img src="https://github.com/KBL411/Project_AppBigData/blob/main/for_README/force_plot.png>"/>
+<img src="https://github.com/KBL411/Project_AppBigData/blob/main/for_README/dependence_plot.png"/>
 
 Visualize a summary plot for each class on the whole dataset.
 <img src="https://github.com/KBL411/Project_AppBigData/blob/main/for_README/summary_plot%20.png"/>
