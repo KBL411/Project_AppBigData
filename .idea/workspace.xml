@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4251706-6906-45a0-b346-1d428ea5b20b" name="Changes" comment="" />
+    <list default="true" id="c4251706-6906-45a0-b346-1d428ea5b20b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Project_AppBigData.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Project_AppBigData.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +39,9 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -56,7 +63,7 @@
       <recent name="C:\Users\Rayan\source\Project_AppBigData\Notebooks" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="Python.featuring">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Project_AppBigData/docs/build/html/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -219,7 +226,8 @@
       <workItem from="1637520828024" duration="2602000" />
       <workItem from="1637601081592" duration="4086000" />
       <workItem from="1637657039125" duration="6107000" />
-      <workItem from="1637663231906" duration="723000" />
+      <workItem from="1637663231906" duration="1019000" />
+      <workItem from="1637664284521" duration="1445000" />
     </task>
     <servers />
   </component>
@@ -244,6 +252,6 @@
     <SUITE FILE_PATH="coverage/Project_AppBigData$.coverage" NAME=" Coverage Results" MODIFIED="1637190072998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Project_AppBigData$dataprep.coverage" NAME="dataprep Coverage Results" MODIFIED="1637055920213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Project_AppBigData$training.coverage" NAME="training Coverage Results" MODIFIED="1637191945697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Project_AppBigData$featuring.coverage" NAME="featuring Coverage Results" MODIFIED="1637057249161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Project_AppBigData$featuring.coverage" NAME="featuring Coverage Results" MODIFIED="1637664171642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
