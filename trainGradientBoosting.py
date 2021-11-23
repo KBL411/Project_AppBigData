@@ -12,6 +12,15 @@ import mlflow
 
 
 def model_accuracy(features_test: pd.DataFrame, target_test: pd.DataFrame, model):
+    """
+    This function show the accuracy and the confusion matrix.
+    It transmit accuracy and confusion matrix to mlflow
+    :param features_test: Dataframe of validation
+    :param target_test: Y_validation
+    :param model: The model we use (XGboost / RandomForest / GradientBoosting)
+    :return: It doesn't have a return since it's a printing function
+    """
+
     target_pred = model.predict(features_test)
     accuracy = accuracy_score(target_test, target_pred)
     mlflow.log_metric("accuracy", (accuracy * 100.0))
@@ -26,6 +35,14 @@ def model_accuracy(features_test: pd.DataFrame, target_test: pd.DataFrame, model
 
 
 def train(random_state, n_estimators):
+    """
+     It train the Gradient Boosting model, 80 % for training and 20 % for the validation.
+     The train test split is only on the labelled data of the training dataset.
+     When the training is done we store the Model in the model directory
+     :param random_state: We choose the random state
+     :param n_estimators: We choose the number of trees we want to build before choosing the best
+     :return: It doesn't have a return since it's a printing function
+     """
     y = df_train[['TARGET']]
     X = df_train.drop('TARGET', axis=1)
 
