@@ -61,6 +61,33 @@ Use a short, lowercase word or words. Separate words with underscores to improve
 Use a short, lowercase word or words. Do not separate words with underscores.
 `package`,  `mypackage`
 
+## MlFlow usage
+### Train tracking
+To launch mlflow in poetry environment, launch this command in the project directory:
+	
+	poetry run mlflow ui
+
+Then simply click on the link displayed in the console (usually http://127.0.0.1:5000/)
+
+All launch are displayed in the ui. To see which model has been used, look at the `source` column
+
+To launch another train, launch in the project directory the following command:
+
+	poetry run python train[GradientBoosting/RandomForest/XGBoost].py random_state n_estimators
+
+Choose the appropriate file depending on the model you are interested in.
+
+`random_state` and `n_estimators` are parameters used by the programs and are replaces by respectively 42 and 100 if not specified.
+
+Note : XGBoost algorithm do not use `n_estimators`.
+
+### Model serving API
+In order make a trained model available to use via a REST API, get the hash of the model training and run following command in project directory:
+
+	poetry run mlflow models serve –m mlruns\0\[model hash]\artifacts\model -p [port to use]
+
+A hash is similar to this `1f8180d11f6146389b4b0a4a08401c1e` and you can use port `1234` for instance.
+
 ## ML Interpretability (SHAP)
 Visualize explanations for a specific point of a data set.
 

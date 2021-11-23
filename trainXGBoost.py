@@ -1,3 +1,6 @@
+import sys
+from urllib.parse import urlparse
+
 import pandas as pd
 from xgboost import XGBClassifier
 from sklearn.model_selection import train_test_split
@@ -35,4 +38,16 @@ def train(random_state):
     model_accuracy(X_test, y_test, model_XGB)
     joblib.dump(model_XGB, "model/Xgboost.model.joblib", compress=3)
 
+    tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
+
+    if tracking_url_type_store != "file":
+        mlflow.sklearn.log_model(model_XGB, "model", registered_model_name="XGBoost")
+    else:
+        mlflow.sklearn.log_model(model_XGB, "model")
+
     print('end of model training\n')
+
+
+if __name__ == "__main__":
+    random_state = int(sys.argv[1]) if len(sys.argv) > 1 else 42
+    train(random_state)
