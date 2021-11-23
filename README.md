@@ -103,6 +103,6 @@ A dependence scatter plot to show the effect of a single feature across the whol
 <img src="https://github.com/KBL411/Project_AppBigData/for_README/dependence_plot.png"/>
 
 Visualize a summary plot for each class on the whole dataset.
-<img src="https://github.com/KBL411/Project_AppBigData/for_README/summary_plot .png"/>
+<img src="https://github.com/KBL411/Project_AppBigData/blob/main/for_README/summary_plot%20.png"/>
 
 
